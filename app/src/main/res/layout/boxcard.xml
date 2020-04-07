@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp"
+    android:background="@color/design_default_color_primary_dark"
+    android:layout_marginTop="10dp"
+    app:cardElevation="15dp"
+    app:cardBackgroundColor="@color/colorAccent">
+    <View
+        android:id="@+id/viewColorTag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tasktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+
+            android:fontFamily="sans-serif-condensed-light"
+            android:hint="task"
+            android:maxLines="1"
+            android:text="Title"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Description"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:layout_below="@id/tasktitle"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="18dp"
+            android:id="@+id/descriptiontxt"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:id="@+id/dd"
+            android:layout_marginLeft="18dp"
+            android:layout_below="@id/descriptiontxt"
+            android:textSize="15dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@android:color/darker_gray"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datetxt"
+            android:layout_toRightOf="@id/dd"
+            android:text="date"
+            android:textSize="18dp"
+            android:layout_below="@id/descriptiontxt"
+            android:layout_marginLeft="18dp"
+            android:textColor="@android:color/holo_blue_bright"
+
+            android:layout_marginTop="10dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timetxt"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+
+            android:text="Time"
+            android:layout_marginRight="19dp"
+            android:layout_alignEnd="@id/dd"
+
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="18sp"
+            ></TextView>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

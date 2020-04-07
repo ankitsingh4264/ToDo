@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddWork"
+    android:layout_marginLeft="5dp">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Title"
+            android:textSize="22sp"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edttitle"
+            ></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="22sp"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/edtdesp"
+            ></EditText>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+
+        app:hintTextColor="@color/colorAccent"
+        app:boxStrokeColor="@android:color/holo_red_light"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Set Date"
+            android:clickable="true"
+            android:id="@+id/dateEdt"
+            android:cursorVisible="false"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorAccent"
+            android:focusable="false"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+
+
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+
+        app:hintTextColor="@color/colorAccent"
+        app:boxStrokeColor="@android:color/holo_red_light"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Set time"
+            android:visibility="invisible"
+
+            android:clickable="true"
+            android:id="@+id/timeEdt"
+            android:cursorVisible="false"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorAccent"
+            android:focusable="false"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="ADD"
+        android:id="@+id/btnaddtask"
+        android:textSize="25sp"
+        android:background="@color/colorPrimary"
+        ></Button>
+
+</LinearLayout>
